@@ -22,7 +22,7 @@ dotenv.config()
 const mongoose = require('mongoose')
 const connectDB = async ()=>{
     try {
-        await mongoose.connect(process.env.MONGO_URL, {
+        await mongoose.connect(mongodb+srv://atloginn:<password>@cluster0.ql6cy5y.mongodb.net/, {
             useNewUrlParser: true
         })
         const db = mongoose.connection
